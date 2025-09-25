@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Showcase</h1>
+    <nav>
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="clothing">Clothing</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="accessories">Accessories</button>
+    </nav>
+  </header>
+
+  <main class="product-gallery">
+    <!-- Product Cards -->
+    <div class="product-card" data-category="clothing">
+      <img src="https://via.placeholder.com/200x200.png?text=T-Shirt" alt="T-Shirt">
+      <h3>Casual T-Shirt</h3>
+      <p>₹499</p>
+      <button class="view-btn">View</button>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <img src="https://via.placeholder.com/200x200.png?text=Headphones" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>₹1999</p>
+      <button class="view-btn">View</button>
+    </div>
+
+    <div class="product-card" data-category="accessories">
+      <img src="https://via.placeholder.com/200x200.png?text=Watch" alt="Watch">
+      <h3>Smart Watch</h3>
+      <p>₹2999</p>
+      <button class="view-btn">View</button>
+    </div>
+
+    <div class="product-card" data-category="clothing">
+      <img src="https://via.placeholder.com/200x200.png?text=Jeans" alt="Jeans">
+      <h3>Denim Jeans</h3>
+      <p>₹899</p>
+      <button class="view-btn">View</button>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-price"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
